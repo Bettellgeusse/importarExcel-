@@ -34,6 +34,9 @@
             $valor= $hoja ->getCell('C'.$row)->getValue();
             $apellido= $hoja ->getCell('D'.$row)->getValue();
             $nombre= $hoja ->getCell('E'.$row)->getValue();
+            if($numerofactura==""){
+
+            }else{
              echo "<tr>";
              echo "<td>.$numerofactura.</td>";
              echo "<td>.$codigopredio.</td>";
@@ -41,6 +44,7 @@
              echo "<td>.$apellido.</td>";
              echo "<td>.$nombre.</td>";
              echo "</tr>";
+            }
          }
          echo  "</tbody></table>";
 
